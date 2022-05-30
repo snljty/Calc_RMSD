@@ -1,6 +1,7 @@
 ! Calculates RMSD along a trajectory (multi-frame) file based on a reference file.
 !
 ! Algorithm:
+! Kabsch's algorithm of aligning is applied.
 ! let P be the ref, Q be the traj, both dimension(n, d), where n is the amount of atoms, d is the number of dimensions.
 ! first translate geometry center of P and Q to the origin point of the cartesian coordinates:
 ! P -= sum(P) / n, Q -= sum(Q) / n
