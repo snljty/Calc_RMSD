@@ -19,6 +19,5 @@ The average of RMSD along the trajectory is E_RMSD = sum(RMSD) / f, where f is t
 and the sample standard deviation is defined as sqrt(sum((RMSD - E_RMSD) ** 2) / (f - 1)).
 
 The examples are ref.xyz as the reference file and traj.xyz as the trajectory file, 
-and all.xyz is what generated when concatenate ref.xyz and traj.xyz, and you can get the same results
-from all.xyz using VMD.
+you can get the same result of RMSD using VMD. For how to do this in VMD you can check http://sobereva.com/290.
 
