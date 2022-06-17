@@ -9,7 +9,7 @@ first translate geometry center of P and Q to the origin point of the cartesian 
 P -= sum(P) / n, Q -= sum(Q) / n
 then rotate to align
 let the covariance matrix H be P^T @ Q, then do sigular value decomposition to H:
-H = U @ S @ V^T, after the SVD, then let sign be det(U @ V^T) // abs(det(U @ V^T)), then let 
+H = U @ S @ V^T, after the SVD, then let sign be sign(det(U @ V^T)), and let 
          1   0   0
 R = U @ (0   1   0  ) @ V^T, then R is the rotation matrix.
          0   0  sign
